@@ -11,7 +11,7 @@ section .text
 main:
 
 cli
-jmp 0x0000:ZeroSeg
+jmp 0x0000:ZeroSeg 
 ZeroSeg:
   xor ax, ax
   mov ss, ax
@@ -31,12 +31,15 @@ pop ax
 mov al, 1
 mov cl, 2
 call readDisk
-call test
+
+mov dx, 0x1234
+call printh
 
 jmp $
 
 %include "./printf.asm"
 %include "./readDisk.asm"
+%include "./printh.asm"
 
 ;STR_0 db "Loaded in 16-bit Real Mode to memory location 0x7c00", 0x0a, 0x0d, 0
 
