@@ -30,13 +30,13 @@ To compile SkidOS, you need to have the following installed:
 Once you have those installed, you can compile SkidOS by running the following command in the root directory of the project:
 
 ```bash
-nasm -f bin main.asm -o boot.bin
+make
 ```
 
-then
+# How do i run SkidOS?
 
 ```bash
-qemu-system-x86_64 boot.bin
+make run
 ```
 
 # What IDE do you use?
