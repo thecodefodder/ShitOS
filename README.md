@@ -19,3 +19,22 @@ Yes but no. Its a bear minimum operating system, so you can use it for whatever 
 # Can i use SkidOS for my own project?
 
 Abosolutely! I would love to see you use it but i must admit that it is not the best operating system to use for your own project. It is very bare bones and is not meant to be used as a daily driver. If you want to use it for your own project, please give me credit.
+
+# How do i build SkidOS?
+
+To compile SkidOS, you need to have the following installed:
+
+- [x] [NASM](https://www.nasm.us/)
+- [x] [QEMU](https://www.qemu.org/)
+
+Once you have those installed, you can compile SkidOS by running the following command in the root directory of the project:
+
+```bash
+nasm -f bin main.asm -o boot.bin
+```
+
+then
+
+```bash
+qemu-system-x86_64 boot.bin
+```
