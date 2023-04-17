@@ -38,3 +38,8 @@ then
 ```bash
 qemu-system-x86_64 boot.bin
 ```
+
+# What IDE do you use?
+
+I use [NeoVim](https://neovim.io/) with the [AstroVim](https://astronvim.com/)
+but you can use whatever you want.
